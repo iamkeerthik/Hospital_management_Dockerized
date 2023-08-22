@@ -1,5 +1,6 @@
 <?php
-$con = mysqli_connect("db", "kirik", "kirik@123", "myhmsdb");
+session_start();
+$con = mysqli_connect("db", "root", "mysql@123", "myhmsdb");
 if (isset($_POST['patsub'])) {
     $email = $_POST['email'];
     $password = $_POST['password2'];

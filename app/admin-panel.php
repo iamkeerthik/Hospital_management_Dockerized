@@ -1,8 +1,10 @@
-<!DOCTYPE html>
-<?php 
+<?php
+// Turn off notices and warnings
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+session_start();
 include('func.php');  
 include('newfunc.php');
-$con = mysqli_connect("db", "kirik", "kirik@123", "myhmsdb");
+$con = mysqli_connect("db", "root", "mysql@123", "myhmsdb");
 
   $pid = $_SESSION['pid'];
   $username = $_SESSION['username'];
@@ -150,6 +152,7 @@ function get_specs(){
 }
 
 ?>
+<!DOCTYPE html>
 <html lang="en">
   <head>
 

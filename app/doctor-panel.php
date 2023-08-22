@@ -1,5 +1,7 @@
-<!DOCTYPE html>
-<?php 
+<?php
+// Turn off notices and warnings
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+session_start();
 include('func1.php');
 $doctor = $_SESSION['dname'];
 if(isset($_GET['cancel']))
@@ -32,6 +34,7 @@ if(isset($_GET['cancel']))
 
 
 ?>
+<!DOCTYPE html>
 <html lang="en">
   <head>
 
