@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <?php 
-$con = mysqli_connect("db", "kirik", "kirik@123", "myhmsdb");
+include('connection.php');
 include('newfunc.php');
 if(isset($_POST['docsub']))
 {

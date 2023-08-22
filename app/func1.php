@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("db", "root", "mysql@123", "myhmsdb");
+include('connection.php');
 if(isset($_POST['docsub1'])){
 	$dname=$_POST['username3'];
 	$dpass=$_POST['password3'];

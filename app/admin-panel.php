@@ -1,10 +1,12 @@
 <?php
 // Turn off notices and warnings
 error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+// Turn off all deprecated warnings temporarily
+error_reporting(error_reporting() & ~E_DEPRECATED);
 session_start();
 include('func.php');  
 include('newfunc.php');
-$con = mysqli_connect("db", "root", "mysql@123", "myhmsdb");
+include('connection.php');
 
   $pid = $_SESSION['pid'];
   $username = $_SESSION['username'];

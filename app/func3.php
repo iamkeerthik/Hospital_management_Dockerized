@@ -1,6 +1,5 @@
 <?php
-$con = mysqli_connect("db", "kirik", "kirik@123", "myhmsdb");
-
+include('connection.php');
 if(isset($_POST['adsub'])){
     $username = $_POST['username1'];
     $password = $_POST['password2'];

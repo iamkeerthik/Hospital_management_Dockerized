@@ -1,6 +1,6 @@
 <?php
 session_start();
-$con = mysqli_connect("db", "kirik", "kirik@123", "myhmsdb");
+include('connection.php');
 if(isset($_POST['patsub1'])){
 	$fname=$_POST['fname'];
   $lname=$_POST['lname'];

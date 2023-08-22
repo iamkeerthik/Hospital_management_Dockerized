@@ -1,5 +1,6 @@
-<!DOCTYPE html>
 <?php
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+session_start();
 include('func1.php');
 $pid='';
 $ID='';
@@ -45,7 +46,7 @@ if(isset($_POST['prescribe']) && isset($_POST['pid']) && isset($_POST['ID']) && 
 }
 
 ?>
-
+<!DOCTYPE html>
 <html lang="en">
   <head>
 

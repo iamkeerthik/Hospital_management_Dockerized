@@ -1,6 +1,6 @@
 <?php
 // session_start();
-$con = mysqli_connect("db", "kirik", "kirik@123", "myhmsdb");
+include('connection.php');
 // if(isset($_POST['submit'])){
 //  $username=$_POST['username'];
 //  $password=$_POST['password'];

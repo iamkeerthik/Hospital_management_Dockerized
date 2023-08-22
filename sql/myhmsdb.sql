@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: db
--- Generation Time: Jun 11, 2023 at 08:06 AM
--- Server version: 8.0.33
--- PHP Version: 8.1.17
+-- Generation Time: Aug 22, 2023 at 12:02 PM
+-- Server version: 8.1.0
+-- PHP Version: 8.2.8
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 START TRANSACTION;
@@ -158,29 +158,18 @@ CREATE TABLE `patreg` (
 --
 
 INSERT INTO `patreg` (`pid`, `fname`, `lname`, `gender`, `email`, `contact`, `password`) VALUES
-(1, 'Ram', 'Kumar', 'Male', 'ram@gmail.com', '9876543210', 'ram123'),
-(2, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', 'alia123'),
-(3, 'Shahrukh', 'khan', 'Male', 'shahrukh@gmail.com', '8976898463', 'shahrukh123'),
-(4, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', 'kishan123'),
-(5, 'Gautam', 'Shankararam', 'Male', 'gautam@gmail.com', '9070897653', 'gautam123'),
-(6, 'Sushant', 'Singh', 'Male', 'sushant@gmail.com', '9059986865', 'sushant123'),
-(7, 'Nancy', 'Deborah', 'Female', 'nancy@gmail.com', '9128972454', 'nancy123'),
-(8, 'Kenny', 'Sebastian', 'Male', 'kenny@gmail.com', '9809879868', 'kenny123'),
-(9, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', 'william123'),
-(10, 'Peter', 'Norvig', 'Male', 'peter@gmail.com', '9609362815', 'peter123'),
-(11, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', 'shraddha123'),
-(12, 'jay', 'm', 'Male', 'kirikextra@gmail.com', '2662266789', 'abcd@1234'),
-(13, 'jay', 'm', 'Male', 'iamkirix@gmail.com', '2662266789', '987654321'),
-(20, 'abi', 'k', 'Male', 'abi@gmail.com', '7894561230', 'abi@1234'),
-(21, 'kavita', 'k', 'Female', 'kavita@gmail.com', '8974563215', 'kavita@1234'),
-(22, 'ganesh', 'g', 'Male', 'ganesh@gmail.com', '4563217892', 'ganesh123'),
-(23, 'geeta', 'g', 'Female', 'geeta@gmail.com', '7896541235', 'geeta@123'),
-(24, 'jagesh', 'j', 'Male', 'jagesh@gmail.com', '7896541235', '$2y$10$5rGQVF0MFgnbJmUKb98yKeC'),
-(28, 'raj', 'b', 'Male', 'raj@gmail.com', '7893214560', '$2y$10$DAprJxrreX2Ro/XEGr/9nuTfo5LF8D06MbnV6pYiXHSSd6g6M/k5S'),
-(29, 'ragu', 'v', 'Male', 'ragu@gmail.com', '9874563218', '$2y$10$e6dF4ysH9BI2o0NC0i6pvunwL.0ugyyaFjASDm1WpkL6pPZRVar1q'),
-(30, 'ganeshk', 'raj', 'Male', 'raj@gmail.com', '7893214560', 'ganesh@890'),
-(31, 'daram', 'singh', 'Male', 'daram@gmaill.com', '7893654128', '$2y$10$vj0kD9NYza.iOTeGsyvob.kHBrCwV0.hjIWxiTNEeNGCFB/3Me/yC'),
-(32, 'vivek', 'r', 'Male', 'vivek@gmail.com', '7893214560', '$2y$10$Sstzo0A6J4spStEzHSvfg.lvYh4XRz2eQbXHg8FvZ2IedV0Z/P1p.');
+(1, 'Ram', 'Kumar', 'Male', 'ram@gmail.com', '9876543210', '$2y$10$SpTm/QLdDkj2.zN0qN/Nnu3Fn7UfX9.5sH/fdawdIJu2/QsZ/Lree'),
+(2, 'Alia', 'Bhatt', 'Female', 'alia@gmail.com', '8976897689', '$2y$10$rt9eMslZR3NIUfFsGtYMnOOfBELh073.NnIQGXeBd42viaiE58V..'),
+(3, 'Shahrukh', 'khan', 'Male', 'shahrukh@gmail.com', '8976898463', '$2y$10$6RY4t75WQl1ZN50Lv/jFjuGLBPAtAZOGTESkeViJbRqWpyGStcOgK'),
+(4, 'Kishan', 'Lal', 'Male', 'kishansmart0@gmail.com', '8838489464', '$2y$10$vpq3ESJfRNct6Pj5zb/oM.D/KKYJrc0Rpl/GuaLBh8ag9Hh5Nvt9i'),
+(5, 'Gautam', 'Shankararam', 'Male', 'gautam@gmail.com', '9070897653', '$2y$10$xtV4A2YSQlS5mGExMyUcm.c/zEyLb.ZPy9ag1Z374P9e0vNz9gxIy'),
+(6, 'Sushant', 'Singh', 'Male', 'sushant@gmail.com', '9059986865', '$2y$10$azX44ckIcDNcSAM0PmAS9O29lYvCV0rRyKVlnSRYi1NBT8tZ81/TK'),
+(7, 'Nancy', 'Deborah', 'Female', 'nancy@gmail.com', '9128972454', '$2y$10$ijRqd./6dmrb2gXRgNtrROX2TGAQnRpr5KUt9i46FcmlUaoV8RZlm'),
+(8, 'Kenny', 'Sebastian', 'Male', 'kenny@gmail.com', '9809879868', '$2y$10$ab8icy0tBVJ336UA4cLzqOk/CyTxvLyy08AFvvUNvR6uXo3yz12.q'),
+(9, 'William', 'Blake', 'Male', 'william@gmail.com', '8683619153', '$2y$10$ZTDIu.J7mmIO/1pmKezKoeUB0AejENC7PuQB4.XB8sr0zzEPQV5eC'),
+(11, 'Shraddha', 'Kapoor', 'Female', 'shraddha@gmail.com', '9768946252', '$2y$10$ceNi.WmLsWp.N2RalI58WubXn2.Q0a04vw23FydAGAntc54J9wMBa'),
+(22, 'ganesh', 'g', 'Male', 'ganesh@gmail.com', '4563217892', '$2y$10$1Hf48EwZWIOZdgRgc0smF.WqnFvU06os6JClrU3.OU7faaUZSemDe'),
+(23, 'geeta', 'g', 'Female', 'geeta@gmail.com', '7896541235', '$2y$10$gAPo9psLj9viY46EmtsK4OzM5Jzp899ZLd.ei3ESMVkKpqL4JcQ2G');
 
 -- --------------------------------------------------------
 
