@@ -1,0 +1,32 @@
+version: '3.8'
+services:
+    php-apache-environment:
+        container_name: php-apache
+        build:
+            context: ./app
+            dockerfile: Dockerfile
+        ports:
+            - 8000:80
+    # db:
+    #     container_name: db
+    #     image: mysql
+    #     restart: always
+    #     environment:
+    #       MYSQL_ROOT_PASSWORD: mysql@123
+    #       MYSQL_DATABASE: myhmsdb
+    #       MYSQL_USER: kirik
+    #       MYSQL_PASSWORD: kirik@123
+    #     ports:
+    #       - "9906:3306"
+    #     volumes:
+    #       - ./sql/myhmsdb.sql:/docker-entrypoint-initdb.d/backup.sql
+    #     #command: bash -c "sleep 10 && mysql -u root -p myhsmdb < /docker-entrypoint-initdb.d/backup.sql"
+    phpmyadmin:
+        image: phpmyadmin/phpmyadmin
+        ports:
+        - "8080:80"
+        environment:
+        - PMA_HOST=terraform-20230823072829865900000001.cqjpi1fgxlzn.ap-south-1.rds.amazonaws.com
+        - PMA_PORT=3306
+        - PMA_USER=mysql_user
+        - PMA_PASSWORD=Q)vKw8X}GZ>e
