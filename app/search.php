@@ -1,4 +1,7 @@
 <?php
+// Turn off notices and warnings
+error_reporting(E_ALL & ~E_NOTICE & ~E_WARNING);
+session_start();
 require_once("connection.php");
 if(isset($_POST['search_submit'])){
   $contact=$_POST['contact'];

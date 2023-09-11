@@ -22,7 +22,7 @@ services:
           - "9906:3306"
         volumes:
           - ./sql/myhmsdb.sql:/docker-entrypoint-initdb.d/backup.sql
-        #command: bash -c "sleep 10 && mysql -u root -p myhsmdb < /docker-entrypoint-initdb.d/backup.sql"
+        
     phpmyadmin:
         image: phpmyadmin/phpmyadmin
         ports:
